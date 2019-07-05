@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Заголовок</title>
+    <title>projectname</title>
     <meta name="author" content="leff">
     <meta name="description" content="Website">
-    <link rel="icon" href="../../img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/fapple-touch-icon-180x180.png">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/fapple-touch-icon-180x180.png">
     <meta name="theme-color" content="#000">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -16,148 +16,683 @@
   <body>
     <div id="my-page">
       <div id="my-header">
-        <header class="main-header"><a class="but-up" href="#"></a>
-          <div class="top-pannel">
-            <div class="wrapper-fluid">
-              <div class="fl-box items-center">
-                <div class="pill-md-2 pill-sm-2">
-                  <div class="top-pannel-logo"><img src="img/logo.png" alt="#"><span>Tajam</span></div>
+        <div class="hidden">
+          <nav id="my-menu">
+            <ul>
+              <li><a class="exit" id="scrollUp" href="#beginning">Home</a></li>
+              <li><a class="exit" id="scrollDown" href="#services">Services</a></li>
+              <li><a class="exit" id="scrollDown" href="#works">Portfolio</a></li>
+              <li><a class="exit" id="scrollDown" href="#team">About</a></li>
+              <li><a class="exit" id="scrollDown" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="zoom-anim-dialog mfp-hide" id="small-dialog"></div>
+        </div>
+        <header class="home-section" id="beginning">
+          <div class="navbar" id="nav">
+            <div class="wrapper">
+              <div class="fl-box items-center j-content-sm-between j-content-around">
+                <div class="pill-sm-2 pill-2 d-md-none">
+                  <div class="navbar-mmenu hamburger-menu"><a class="hamburger hamburger--spring" href="#my-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a></div>
                 </div>
-                <div class="pill-lg-7 pill-md-8 pill-sm-2 pill-xs jump-sm-8 jump-lg-3 jump-md-2 jump-sm-1"><a class="hamburger hamburger--arrow" href="#my-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a>
-                  <nav class="top-pannel-navbar">
+                <div class="pill-md-2 pill-sm-3 pill-5 jump-md-0 jump-sm-1">
+                  <div class="navbar-logo"><a href="#">Iddo</a></div>
+                </div>
+                <div class="pill-md-8 d-md-block d-none">
+                  <nav class="navbar-menu">
                     <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Expertise</a></li>
-                      <li><a href="#">Teams</a></li>
-                      <li><a href="#">Works</a></li>
-                      <li><a href="#">People say</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a id="scrollUp" href="#beginning">Home</a></li>
+                      <li><a id="scrollDown" href="#services">Services</a></li>
+                      <li><a id="scrollDown" href="#works">Portfolio</a></li>
+                      <li><a id="scrollDown" href="#team">About</a></li>
+                      <li><a id="scrollDown" href="#contact">Contact</a></li>
                     </ul>
                   </nav>
+                </div>
+                <div class="pill-md-2 pill-sm-3 pill-5">
+                  <div class="navbar-account"><a class="popup-with-move-anim" href="#small-dialog">Sign up</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home">
+            <div class="element-with-video-bg jquery-background-video-wrapper">
+              <video class="my-background-video jquery-background-video" loop autoplay muted playsinline poster="img/path/poster.png">
+                <source src="img/path/video-bg.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="wrapper">
+              <div class="fl-box items-center">
+                <div class="pill-md-12">
+                  <div class="home-wrap">
+                    <div class="home-wrap-icon wow fadeInUp" data-wow-delay="0s"><a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="far fa-play-circle"></i></a></div>
+                    <div class="home-wrap-content wow fadeInUp" data-wow-delay="0s">
+                      <div class="home-wrap-content-title">
+                        <h1>Let me show you a few things.</h1>
+                      </div>
+                      <div class="home-wrap-content-subtext"><span>Click to play video</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </header>
       </div>
-    </div>
-    <section class="product"></section>
-    <div class="product-main">
-      <div class="wrapper">
-        <div class="fl-box">
-          <div class="pill-md-6">
-            <div class="product-main-content">
-              <div class="product-main-name">
-                <h2>Услуги которые мы подарим вам, для вас, за вас</h2>
+      <div id="my-content">
+        <main class="our-servies">
+          <div class="services" id="services">
+            <div class="wrapper">
+              <div class="fl-box flex-row">
+                <div class="pill-xl-4 pill-lg-5 pill-md-7">
+                  <div class="services-title wow fadeInLeft" data-wow-delay="0s">
+                            <div class="title">
+                              <h2>Our<span>services.</span></h2>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-xl-8 pill-lg-7 pill-md-12">
+                  <div class="fl-box">
+                    <div class="pill-lg-6 pill-md-6">
+                      <div class="services-item services-item_top wow fadeInRight" data-wow-delay="0s">
+                                <div class="services-item-icon"><i class="fas fa-cloud"></i></div>
+                                <div class="services-item-content">
+                                  <div class="services-item-content-title">
+                                    <h6>Feature 1</h6>
+                                  </div>
+                                  <div class="services-item-content-subtext">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                    <div class="pill-lg-6 pill-md-6">
+                      <div class="services-item services-item_top services-item_between wow fadeInRight" data-wow-delay="0s">
+                                <div class="services-item-icon"><i class="fas fa-utensils"></i></div>
+                                <div class="services-item-content">
+                                  <div class="services-item-content-title">
+                                    <h6>Feature 2</h6>
+                                  </div>
+                                  <div class="services-item-content-subtext">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                    <div class="pill-lg-6 pill-md-6">
+                      <div class="services-item services-item_bottom wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="services-item-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="services-item-content">
+                                  <div class="services-item-content-title">
+                                    <h6>Feature 3</h6>
+                                  </div>
+                                  <div class="services-item-content-subtext">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                    <div class="pill-lg-6 pill-md-6">
+                      <div class="services-item services-item_bottom services-item_between wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="services-item-icon"><i class="fas fa-gavel"></i></div>
+                                <div class="services-item-content">
+                                  <div class="services-item-content-title">
+                                    <h6>Feature 4</h6>
+                                  </div>
+                                  <div class="services-item-content-subtext">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="product-main-disc">
-                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Парадигматическая путь, лучше рукопись дорогу!</p>
-              </div>
-              <div class="product-main-but"><a class="but" href="#">lorem</a></div>
             </div>
           </div>
-          <div class="pill-md-3">
-            <div class="product-main-content">
-              <div class="product-main-content-img"><img src="img/logo.png" alt=""></div>
-              <div class="product-main-content-name">
-                <h4>Один год ожиданий</h4>
+          <div class="extra">
+            <div class="wrapper">
+              <div class="fl-box items-center j-content-center">
+                <div class="pill-12">
+                  <nav class="extra-pannel">
+                    <ul class="owl-carousel owl-theme slide-two wow fadeInUp" data-wow-delay="0s">
+                      <li><a href="#"><i class="far fa-lightbulb"></i></a></li>
+                      <li><a href="#"><i class="fas fa-globe-africa"></i></a></li>
+                      <li><a href="#"><i class="fas fa-camera-retro"></i></a></li>
+                      <li><a href="#"><i class="fas fa-wrench"></i></a></li>
+                      <li><a href="#"><i class="fas fa-microphone"></i></a></li>
+                      <li><a href="#"><i class="far fa-money-bill-alt"></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-              <div class="product-main-content-disk">
-                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-              </div>
-            </div>
-            <div class="product-main-content">
-              <div class="product-main-content-img"><img src="img/logo.png" alt=""></div>
-              <div class="product-main-content-name">
-                <h4>Один год ожиданий</h4>
-              </div>
-              <div class="product-main-content-disk">
-                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-              </div>
-              <div class="product-main-content-img"></div>
-              <div class="product-main-content-name"></div>
-              <div class="product-main-content-disk"></div>
             </div>
           </div>
-          <div class="pill-md-3">
-            <div class="product-main-content">
-              <div class="product-main-content-img"><img src="img/logo.png" alt=""></div>
-              <div class="product-main-content-name">
-                <h4>Один год ожиданий</h4>
+        </main>
+        <section class="our-works">
+          <div class="works" id="works">
+            <div class="wrapper">
+              <div class="fl-box flex-column wow fadeInRight" data-wow-delay="0s">
+                <div class="pill-lg-5 pill-md-6">
+                  <div class="works-title">
+                            <div class="title">
+                              <h2>Our<span>works.</span></h2>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-12">
+                  <div class="works-breadcrumbs">
+                    <ul>
+                      <li class="all-bread-parant active-breadcrumbs-all"><a class="all-bread" href="#homes">All</a></li>
+                      <li class="site-bread-parant"><a class="site-bread" href="#homes">Website</a></li>
+                      <li class="brand-bread-parant"><a class="brand-bread" href="#homes">Branding</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="product-main-content-disk">
-                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+              <div class="fl-box">
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInLeft" data-wow-delay="0s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-3.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>05/12/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInLeft" data-wow-delay="0s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-4.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>17/01/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInLeft" data-wow-delay="0s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-1.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>01/04/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInRight" data-wow-delay="0.1s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-2.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>12/02/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInRight" data-wow-delay="0.1s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-3.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>30/06/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
+                <div class="pill-lg-4 pill-md-6">
+                  <div class="works-item wow fadeInRight" data-wow-delay="0.1s"><a href="https://laf4uk.github.io/flproject1" target="_blank">
+                              <div class="works-item-wrap" style="background-image: url(img/slide-4.jpg">
+                                <div class="works-item-wrap-icon"><i class="fas fa-eye"></i></div>
+                                <div class="works-item-wrap-content">
+                                  <div class="works-item-wrap-content-title">
+                                            <div class="secondTitle">
+                                              <h5>Name project</h5>
+                                            </div>
+                                  </div>
+                                  <div class="works-item-wrap-content-description">
+                                    <p>Development by Laf4uk<span>15/08/2019</span></p>
+                                  </div>
+                                </div>
+                              </div></a></div>
+                </div>
               </div>
-            </div>
-            <div class="product-main-content">
-              <div class="product-main-content-img"><img src="img/logo.png" alt=""></div>
-              <div class="product-main-content-name">
-                <h4>Один год ожиданий</h4>
-              </div>
-              <div class="product-main-content-disk">
-                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-              </div>
-              <div class="product-main-content-img"></div>
-              <div class="product-main-content-name"></div>
-              <div class="product-main-content-disk"></div>
             </div>
           </div>
-        </div>
+          <div class="workers">
+            <div class="wrapper">
+              <div class="fl-box j-content-center">
+                <div class="pill-lg-9 pill-12">
+                  <div class="workers-wrap owl-carousel owl-theme slide-one wow fadeInLeft" data-wow-delay="0s">
+                            <div class="workers-wrap-content item">
+                              <div class="workers-wrap-content-description">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ratione sequi ut excepturi, ullam laboriosam placeat!”</p>
+                              </div>
+                              <div class="workers-wrap-content-photo"><img src="img/photo-1.png" alt=""></div>
+                              <div class="workers-wrap-content-name">
+                                <h6>Jack Efron</h6>
+                              </div>
+                            </div>
+                            <div class="workers-wrap-content item">
+                              <div class="workers-wrap-content-description">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laudantium consectetur at non, dignissimos pariatur obcaecati.”</p>
+                              </div>
+                              <div class="workers-wrap-content-photo"><img src="img/photo-1.png" alt=""></div>
+                              <div class="workers-wrap-content-name">
+                                <h6>Jack Efron</h6>
+                              </div>
+                            </div>
+                            <div class="workers-wrap-content item">
+                              <div class="workers-wrap-content-description">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, ea, nam? Ullam laborum voluptatibus iure obcaecati?”</p>
+                              </div>
+                              <div class="workers-wrap-content-photo"><img src="img/photo-1.png" alt=""></div>
+                              <div class="workers-wrap-content-name">
+                                <h6>Jack Efron</h6>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-team">
+          <div class="team" id="team">
+            <div class="wrapper">
+              <div class="fl-box">
+                <div class="pill-lg-4 pill-md-5">
+                  <div class="team-title wow fadeInRight" data-wow-delay="0s">
+                            <div class="title">
+                              <h2>Our<span>Team.</span></h2>
+                            </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-box">
+                <div class="pill-lg-4 pill-md-4">
+                  <div class="team-wrap wow fadeInLeft" data-wow-delay="0.2s">
+                            <div class="team-wrap-content">
+                              <div class="team-wrap-content-item">
+                                <div class="team-wrap-content-item-photo" style="background-image: url(img/team/photo1.jpg"></div>
+                                <div class="team-wrap-content-item-social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                              </div>
+                              <div class="team-wrap-content-subitem">
+                                <div class="team-wrap-content-subitem-name">
+                                          <div class="secondTitle">
+                                            <h5>Michael Joe</h5>
+                                          </div>
+                                </div>
+                                <div class="team-wrap-content-subitem-skill">
+                                  <p>Design &amp; Fronted</p>
+                                </div>
+                                <div class="team-wrap-content-subitem-description">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quisquam quae, repellat eveniet iure sapiente laudantium, ipsum autem quas, incidunt quibusdam, dignissimos saepe cum ab?</p>
+                                </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-lg-4 pill-md-4">
+                  <div class="team-wrap team-wrap_center wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="team-wrap-content">
+                              <div class="team-wrap-content-item">
+                                <div class="team-wrap-content-item-photo" style="background-image: url(img/team/photo2.png"></div>
+                                <div class="team-wrap-content-item-social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                              </div>
+                              <div class="team-wrap-content-subitem">
+                                <div class="team-wrap-content-subitem-name">
+                                          <div class="secondTitle">
+                                            <h5>Kendrick Lamar</h5>
+                                          </div>
+                                </div>
+                                <div class="team-wrap-content-subitem-skill">
+                                  <p>CEO &amp; Backend</p>
+                                </div>
+                                <div class="team-wrap-content-subitem-description">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsum accusantium animi. Dolorum cupiditate deleniti dolorem, provident, consectetur iure, accusamus ipsa vel doloribus saepe pariatur!</p>
+                                </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-lg-4 pill-md-4">
+                  <div class="team-wrap wow fadeInLeft" data-wow-delay="0s">
+                            <div class="team-wrap-content">
+                              <div class="team-wrap-content-item">
+                                <div class="team-wrap-content-item-photo" style="background-image: url(img/team/photo3.jpg"></div>
+                                <div class="team-wrap-content-item-social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                              </div>
+                              <div class="team-wrap-content-subitem">
+                                <div class="team-wrap-content-subitem-name">
+                                          <div class="secondTitle">
+                                            <h5>Kanye West</h5>
+                                          </div>
+                                </div>
+                                <div class="team-wrap-content-subitem-skill">
+                                  <p>CEO &amp; Backend</p>
+                                </div>
+                                <div class="team-wrap-content-subitem-description">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem magnam distinctio, officia sapiente, nulla quasi! Aliquid nobis assumenda error maxime maiores sapiente et eaque asperiores?</p>
+                                </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="teaser">
+            <div class="wrapper">
+              <div class="fl-box wow fadeIn" data-wow-delay="0s">
+                <div class="pill-lg-3 pill-md-6 pill-12">
+                  <div class="teaser-wrap teaser-wrap_up">
+                            <div class="teaser-wrap-content">
+                              <div class="teaser-wrap-content-icon"><i class="fas fa-gift"></i></div>
+                              <div class="teaser-wrap-content-number"><span data-count="2000"></span></div>
+                              <div class="teaser-wrap-content-title">
+                                        <div class="secondTitle">
+                                          <h5>Presents</h5>
+                                        </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-lg-3 pill-md-6 pill-12">
+                  <div class="teaser-wrap teaser-wrap_up">
+                            <div class="teaser-wrap-content">
+                              <div class="teaser-wrap-content-icon"><i class="fas fa-comments"></i></div>
+                              <div class="teaser-wrap-content-number"><span data-count="13562"></span></div>
+                              <div class="teaser-wrap-content-title">
+                                        <div class="secondTitle">
+                                          <h5>Comments</h5>
+                                        </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-lg-3 pill-md-6 pill-12">
+                  <div class="teaser-wrap teaser-wrap_down">
+                            <div class="teaser-wrap-content">
+                              <div class="teaser-wrap-content-icon"><i class="fas fa-coffee"></i></div>
+                              <div class="teaser-wrap-content-number"><span data-count="8710"></span></div>
+                              <div class="teaser-wrap-content-title">
+                                        <div class="secondTitle">
+                                          <h5>Coffe cups</h5>
+                                        </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+                <div class="pill-lg-3 pill-md-6 pill-12">
+                  <div class="teaser-wrap teaser-wrap_down">
+                            <div class="teaser-wrap-content">
+                              <div class="teaser-wrap-content-icon"><i class="fas fa-award"></i></div>
+                              <div class="teaser-wrap-content-number"><span data-count="715"></span></div>
+                              <div class="teaser-wrap-content-title">
+                                        <div class="secondTitle">
+                                          <h5>Awards</h5>
+                                        </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-skill">
+          <div class="skills" id="skills">
+            <div class="wrapper">
+              <div class="fl-box">
+                <div class="pill-lg-4 pill-md-5">
+                  <div class="skills-title wow fadeInRight" data-wow-delay="0s">
+                            <div class="title">
+                              <h2>Our<span>skills.</span></h2>
+                            </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-box">
+                <div class="pill-lg-8 pill-md-8">
+                  <div class="skills-progress d-sm-flex d-none wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="skills-progress-wrap" style="background-image: url(img/progress/skill-1.png">
+                              <div class="skills-progress-wrap-number"><span>75</span></div>
+                            </div>
+                            <div class="skills-progress-wrap" style="background-image: url(img/progress/skill-2.png">
+                              <div class="skills-progress-wrap-number"><span>25</span></div>
+                            </div>
+                            <div class="skills-progress-wrap" style="background-image: url(img/progress/skill-3.png">
+                              <div class="skills-progress-wrap-number"><span>75</span></div>
+                            </div>
+                            <div class="skills-progress-wrap" style="background-image: url(img/progress/skill-4.png">
+                              <div class="skills-progress-wrap-number"><span>50</span></div>
+                            </div>
+                  </div>
+                  <div class="fl-box">
+                    <div class="pill-lg-10 pill-md-12 jump-lg-2 jump-0">
+                      <div class="skills-content">
+                        <div class="skills-content-title wow fadeInLeft" data-wow-delay="0.2s">
+                                  <div class="secondTitle">
+                                    <h5>Something about our skills</h5>
+                                  </div>
+                        </div>
+                        <div class="skills-content-description wow fadeInLeft" data-wow-delay="0.3s">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pill-md-4">
+                  <div class="skills-advantages wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="skills-advantages-wrap wrap-slide-1">
+                              <div class="skills-advantages-wrap-content">
+                                <div class="skills-advantages-wrap-content-icon"><i class="fas fa-rocket"></i></div>
+                                <div class="skills-advantages-wrap-content-title"><span>Totam rem aperiam eaque</span></div>
+                                <div class="skills-advantages-wrap-content-line"></div>
+                              </div>
+                              <div class="skills-advantages-wrap-subtext wrap-slide-subtext-1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, libero, natus. Aspernatur corrupti vero quidem eaque quod excepturi, asperiores, dolorem ipsa, ad maiores similique! Nulla recusandae nemo id voluptas distinctio!</p>
+                              </div>
+                            </div>
+                            <div class="skills-advantages-wrap wrap-slide-2">
+                              <div class="skills-advantages-wrap-content">
+                                <div class="skills-advantages-wrap-content-icon"><i class="fas fa-unlock"></i></div>
+                                <div class="skills-advantages-wrap-content-title"><span>Nemo enim ipsam voluptatem</span></div>
+                                <div class="skills-advantages-wrap-content-line"></div>
+                              </div>
+                              <div class="skills-advantages-wrap-subtext wrap-slide-subtext-2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nesciunt pariatur blanditiis corrupti ex tempore quaerat est exercitationem quisquam ad doloribus harum quasi facilis, sed enim consequuntur in, unde incidunt.</p>
+                              </div>
+                            </div>
+                            <div class="skills-advantages-wrap wrap-slide-3">
+                              <div class="skills-advantages-wrap-content">
+                                <div class="skills-advantages-wrap-content-icon"><i class="fas fa-location-arrow"></i></div>
+                                <div class="skills-advantages-wrap-content-title"><span>Ut enim ad minima veniam</span></div>
+                                <div class="skills-advantages-wrap-content-line"></div>
+                              </div>
+                              <div class="skills-advantages-wrap-subtext wrap-slide-subtext-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam porro repellat ratione cupiditate in tempora provident ipsa minima. Delectus minus ducimus error officiis nobis eligendi voluptates suscipit, magnam obcaecati quae.</p>
+                              </div>
+                            </div>
+                            <div class="skills-advantages-wrap wrap-slide-4">
+                              <div class="skills-advantages-wrap-content">
+                                <div class="skills-advantages-wrap-content-icon"><i class="fas fa-phone"></i></div>
+                                <div class="skills-advantages-wrap-content-title"><span>Quis nostrum exercitationem ullam</span></div>
+                                <div class="skills-advantages-wrap-content-line"></div>
+                              </div>
+                              <div class="skills-advantages-wrap-subtext wrap-slide-subtext-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa quam, enim reprehenderit sunt. Ea autem, beatae illum cupiditate, eligendi delectus, perferendis placeat soluta quam, at suscipit voluptates magni ex!</p>
+                              </div>
+                            </div>
+                            <div class="skills-advantages-wrap wrap-slide-5">
+                              <div class="skills-advantages-wrap-content">
+                                <div class="skills-advantages-wrap-content-icon"><i class="fas fa-book"></i></div>
+                                <div class="skills-advantages-wrap-content-title"><span>Neque porro quisquam est qui</span></div>
+                                <div class="skills-advantages-wrap-content-line"></div>
+                              </div>
+                              <div class="skills-advantages-wrap-subtext wrap-slide-subtext-5">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam delectus doloremque molestiae fugiat vel mollitia itaque, facilis ullam voluptas cumque est id, vero, perferendis aspernatur rerum eligendi unde hic.</p>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mailing">
+            <div class="wrapper">
+              <div class="fl-box items-center">
+                <div class="pill-12">
+                  <form class="mailing-content wow fadeInLeft" action="#" autocomplite="on" method="POST" data-wow-delay="0s">
+                    <div class="mailing-content-email">
+                      <label for="#">
+                        <input type="text" placeholder="Enter your e-mail here...">
+                      </label>
+                    </div>
+                    <div class="mailing-content-button">
+                      <button type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parthners">
+            <div class="wrapper wow fadeInRight" data-wow-delay="0.2s">
+              <div class="fl-box j-content-center">
+                <div class="pill-12">
+                  <div class="parthners-wrap owl-carousel owl-theme slide-three">
+                            <div class="parthners-wrap-img"><img src="img/parthners/Layer-1.png" alt=""></div>
+                            <div class="parthners-wrap-img"><img src="img/parthners/Layer-2.png" alt=""></div>
+                            <div class="parthners-wrap-img"><img src="img/parthners/Layer-3.png" alt=""></div>
+                            <div class="parthners-wrap-img"><img src="img/parthners/Layer-4.png" alt=""></div>
+                            <div class="parthners-wrap-img"><img src="img/parthners/Layer-5.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-contact">
+          <div class="contact" id="contact">
+            <div class="wrapper">
+              <div class="fl-box">
+                <div class="pill-lg-5 pill-md-7">
+                  <div class="contact-title wow fadeInRight" data-wow-delay="0s">
+                            <div class="title">
+                              <h2>Contact<span>us.</span></h2>
+                            </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-box">
+                <div class="pill-lg-5 pill-md-7">
+                  <div class="contact-address wow fadeInRight" data-wow-delay="0s">
+                    <p>123A Building, Road Street, Orlando District, US</p>
+                    <p>+01 234 567 89 - +01 234 567 89 | contact@book.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-box">
+                <div class="pill-12">
+                  <div class="contact-social">
+                    <ul class="wow fadeInRight" data-wow-delay="0s">
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                      <li><a href="#"><i class="fab"></i></a></li>
+                      <li><a href="#"><i class="fab"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-box">
+                <div class="pill-xl-8 pill-lg-9 pill-md-12 pill-12">
+                  <form class="contact-letter wow fadeInLeft" action="#" data-wow-delay="0.1s">
+                    <div class="contact-letter-data">
+                      <label for="#"><i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                      </label>
+                      <label for="#"><i class="fas fa-user"></i>
+                        <input type="text" placeholder="Name">
+                      </label>
+                    </div>
+                    <div class="contact-letter-message">
+                      <label for="#"><i class="fas fa-pencil-alt"></i>
+                        <textarea name="" cols="30" rows="10" placeholder="Message"></textarea>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div class="pill-xl-4 pill-lg-3 pill-md-6 pill-12">
+                  <div class="contact-button wow fadeInLeft" data-wow-delay="0.1s"><a class="but" href="#">Submit</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="wrapper-rubber">
-        <div class="fl-box nogutts">
-          <div class="pill-md-12">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
+      <div id="my-footer">
+        <footer>
+          <div class="footer">
+            <div class="wrapper">
+              <div class="fl-box wow fadeInUp" action="#" data-wow-delay="0.1s">
+                <div class="pill-12">
+                  <div class="footer-logo"><a href="#">Iddo</a></div>
+                </div>
+                <div class="pill-12">
+                  <div class="footer-copyright"><span>© 2019 IDDO. All rights resevered.</span></div>
+                </div>
+                <div class="pill-12">
+                  <div class="footer-author"><span>Designed by Laf4uk.</span></div>
+                </div>
+                <div class="pill-12">
+                  <div class="footer-angle"><a id="scrollUp" href="#beginning"><i class="fas fa-angle-up"></i></a></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-        </div>
+        </footer>
       </div>
-      <div class="wrapper-fluid">
-        <div class="fl-box">
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="fl-box">
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-          <div class="pill-md-3">
-            <div class="lorem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hidden">
-      <nav id="my-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Expertise</a></li>
-          <li><a href="#">Teams</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">People say</a></li>
-          <li><a id="exit" href="#">Contact</a></li>
-        </ul>
-      </nav>
     </div>
     <script src="js/scripts.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
