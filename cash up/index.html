@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>projectname</title>
+    <meta name="description" content="Website">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <meta name="theme-color" content="#000">
+    <meta property="og:image" content="img/dest/preview.jpg">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.min.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body class="page">
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="wrapper">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__header">
+            <div class="mobile-menu__logo">
+                  <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhTwBdAIAAAP///wAAACH5BAEAAAEALAAAAABPAF0AAAJfjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8bQEAOw==" data-src="img/logo-dark.png" data-srcset="img/logo-dark.png 1x" alt="logo"></a></div>
+            </div>
+            <div class="mobile-menu__close">
+                  <div class="close" id="close"><img class="close__img lazy" src="data:image/gif;base64,R0lGODlhGAASAIAAAP///wAAACH5BAEAAAEALAAAAAAYABIAAAISjI+py+0Po5y02ouz3rz7D3oFADs=" data-src="img/icons/ico-close.png" data-srcset="img/icons/ico-close.png 1x" alt="close"></div>
+            </div>
+          </div>
+          <div class="mobile-menu__main">
+            <div class="mobile-menu__navbar">
+                  <nav class="navbar navbar--mobile">
+                    <ul class="navbar__wrap">
+                      <li class="navbar__item"><a class="navbar__link" href="https://vk.com/feed" target="_blank">Группа VK</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#about">О нас</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#tariffs">Тарифы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#advantages">Преимущества</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#reviews">Отзывы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+            </div>
+          </div>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__social">
+                  <div class="social"><a class="social__link" href="https://vk.com/feed" target="_blank"><img class="social__icon lazy" src="data:image/gif;base64,R0lGODlhJAAVAIAAAP///wAAACH5BAEAAAEALAAAAAAkABUAAAIajI+py+0Po5y02ouz3rz7D4biSJbmiabqVAAAOw==" data-src="img/icons/ico-vk-dark.png" data-srcset="img/icons/ico-vk-dark.png 1x" alt="vk"></a></div>
+            </div>
+            <div class="mobile-menu__rules">Все права защищены. ® 2020 CashUP.Bet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup__main">
+        <div class="popup__close">
+          <div class="close" id="close">
+            <div class="close__bg"></div>
+          </div>
+        </div>
+        <div class="popup__tariff">
+          Тариф
+          “<span class="tariff" id="tariff">Standart</span>” -
+          <span class="days" id="days">30 дней</span>
+        </div>
+        <form class="popup__forms" action="form">
+          <div class="popup__items">
+            <div class="popup__item">
+                  <input class="input input--medium" type="text" placeholder="Ссылка VK">
+            </div>
+            <div class="popup__item">
+                  <input class="input input--medium" type="text" placeholder="Аккаунт Telegram">
+            </div>
+            <div class="popup__item">
+                  <input class="input input--medium" type="text" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="popup__buy">
+            <div class="popup__price"><span class="price price--form" id="price">1990</span></div>
+            <div class="popup__btn">
+                  <button class="btn btn--small btn--accent" id="is" type="button">Оплатить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="popup__footer">В течении нескольких часов с вами свяжутся и расскажут дальнейший план действий. В случае вопросов пишите в официальную <a class="popup__link" href="https://vk.com/feed" target="_blank">группу VK</a></div>
+    </div>
+    <section class="main-nav">
+      <div class="wrapper">
+        <div class="main-nav__inner">
+          <div class="main-nav__logo">
+                <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhXgBuAIAAAP///wAAACH5BAEAAAEALAAAAABeAG4AAAJ2jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOQlTAAA7" data-src="img/logo.png" data-srcset="img/logo.png 1x" alt="logo"></a></div>
+          </div>
+          <div class="main-nav__content">
+            <div class="main-nav__navbar">
+                  <nav class="navbar navbar--main">
+                    <ul class="navbar__wrap">
+                      <li class="navbar__item"><a class="navbar__link" href="#about">О нас</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#tariffs">Тарифы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#advantages">Преимущества</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#reviews">Отзывы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="main-nav__social">
+                  <div class="social social--light"><a class="social__link" href="https://vk.com/feed" target="_blank"><img class="social__icon lazy" src="data:image/gif;base64,R0lGODlhGgAQAIAAAP///wAAACH5BAEAAAEALAAAAAAaABAAAAISjI+py+0Po5y02ouz3rz7DzoFADs=" data-src="img/icons/ico-vk.png" data-srcset="img/icons/ico-vk.png 1x" alt="vk"></a></div>
+            </div>
+            <div class="main-nav__burger">
+              <div class="burger" id="mobile-toggle"><img class="burger__img lazy" src="data:image/gif;base64,R0lGODlhGAASAIAAAP///wAAACH5BAEAAAEALAAAAAAYABIAAAISjI+py+0Po5y02ouz3rz7D3oFADs=" data-src="img/icons/nav-resize.png" data-srcset="img/icons/nav-resize.png 1x" alt="burger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__content">
+            <div class="header__heading">
+              <div class="heading">
+                <h1>Прогнозы с 80% проходимостью</h1>
+              </div>
+            </div>
+            <div class="header__desc">
+              <div class="desc desc--medium">
+                <div class="desc__text">Мы выкупаем прогнозы лучших каперов, после чего команда аналитиков делает свой анализ, и вы получаете надежные прогнозы</div>
+              </div>
+            </div>
+            <div class="header__calc">
+              <div class="calc">
+                <div class="calc__title">Рассчитайте вашу возможную прибыль:</div>
+                <div class="calc__items">
+                  <div class="calc__item">
+                        <input class="input input--small" id="count" type="text" placeholder="Сумма банка">
+                  </div>
+                  <div class="calc__item">
+                        <div class="select select--small" id="select">
+                          <div class="select__selected">Тариф</div>
+                          <div class="select__dropdown">
+                            <div class="select__option">
+                              <input class="radio" id="tariff-standart" type="radio" name="tariff" data-coefficient="1.7">
+                              <label for="tariff-standart">Standart</label>
+                            </div>
+                            <div class="select__option">
+                              <input class="radio" id="tariff-expres" type="radio" name="tariff" data-coefficient="3">
+                              <label for="tariff-expres">Express</label>
+                            </div>
+                            <div class="select__option">
+                              <input class="radio" id="tariff-vip" type="radio" name="tariff" data-coefficient="5">
+                              <label for="tariff-vip">VIP</label>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="calc__item">
+                        <button class="btn btn--small btn--dark" id="calculate" type="button">Рассчитать
+                        </button>
+                  </div>
+                </div>
+              </div>
+              <div class="result">
+                <div class="result__title">Выигрыш по тарифу может составить:</div>
+                <div class="result__content">
+                  <div class="result__gain"><span class="amount" id="amount"></span>
+                    <span class="ruble ruble--small">Р</span>
+                  </div>
+                  <div class="result__slit"></div>
+                  <div class="result__btn"><a class="btn btn--small btn--light" href="#tariffs">Выбрать тариф</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__player" id="player"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section advantages" id="advantages">
+      <div class="wrapper">
+        <div class="advantages__title">
+          <div class="title">
+            <div class="title__item">
+              <h6>Преимущества</h6>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__inner" id="advantages-inner">
+          <div class="advantages__method">
+            <div class="method" id="method">
+              <div class="method__heading">
+                <div class="heading">
+                  <h2>Порядок Работы</h2>
+                </div>
+              </div>
+              <div class="method__items">
+                    <div class="method__item">
+                      <div class="method__title">1. Покупка тарифа</div>
+                      <div class="method__desc">
+                        <div class="desc desc--medium">
+                          <div class="desc__text">- Купите один из восьми тарифов на сайте. Успешно оплатите выбранный тариф.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="method__item">
+                      <div class="method__title">2. Добавление в чат-рассылку.</div>
+                      <div class="method__desc">
+                        <div class="desc desc--medium">
+                          <div class="desc__text">- Наши сотрудники добавят Вас в специальную рассылку с прогнозами и аналитикой.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="method__item">
+                      <div class="method__title">3. Умножение капитала.</div>
+                      <div class="method__desc">
+                        <div class="desc desc--medium">
+                          <div class="desc__text">- Получайте прибыль от ставок с вероятностью выигрыша 80%.</div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__about">
+            <div class="about" id="about">
+              <div class="about__heading">
+                <div class="heading">
+                  <h2>Команда<span> CASH UP</span></h2>
+                </div>
+              </div>
+              <div class="about__desc">
+                <div class="desc desc--medium">
+                  <div class="desc__text">Команда экспертов “Cash Up” - это профессиональные спортивыные аналитики с опытом работы более 5 лет. Проходимость каждого из капперов - более 80%. Наша команда поможет вам зарабатывать с первого дня сотрудничества. Наши аналитики будут давать вам от 7 до 12 прогнозов в день, проходимость которых в среднем 8 из 10. Это даст вам возможность увеличивать ваш банк на сумму от 80%.</div>
+                </div>
+              </div>
+              <div class="about__btn">
+                    <a class="btn btn--medium btn--gradient" href="#tariffs">Выбрать тариф</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section profit" id="profit">
+      <div class="wrapper">
+        <div class="profit__title">
+          <div class="title">
+            <div class="title__item">
+              <h6>Итого прибыль составила:</h6>
+            </div>
+            <div class="title__item"><span class="date">27.08 - 02.09</span></div>
+          </div>
+        </div>
+        <div class="profit__inner">
+          <div class="profit__income">
+            <div class="income">214 120<span class="ruble ruble--medium">Р</span></div>
+          </div>
+          <div class="profit__stats">
+            <div class="stats">
+              <div class="stats__positive"><span class="positive">79</span></div>
+              <div class="stats__negative"><span class="negative">12</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section tariffs">
+      <div class="wrapper">
+        <div class="tariffs__title" id="tariffs">
+          <div class="title">
+            <div class="title__text">
+              <h6>Тарифы</h6>
+            </div>
+          </div>
+        </div>
+        <div class="tariffs__inner">
+          <div class="tariffs__items">
+                <div class="tariffs__item">
+                  <div class="tariffs__skin">
+                    <div class="tariffs__icon"><img class="tariffs__img lazy" src="data:image/gif;base64,R0lGODlhxwDHAIAAAP///wAAACH5BAEAAAEALAAAAADHAMcAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8YFjRwTFgAAOw==" data-src="img/tariffs/tariff-standart.png" data-srcset="img/tariffs/tariff-standart.png 1x" alt="#"></div>
+                    <div class="tariffs__marker">
+                      <div class="marker marker--light"><span class="marker__time">30 дней</span></div>
+                    </div>
+                  </div>
+                  <div class="tariffs__content">
+                    <div class="tariffs__price"><span class="price">1990</span>
+                    </div>
+                    <div class="tariffs__desc">
+                      <div class="desc desc--small">
+                        <ul class="desc__text">
+                          <li class="desc__item">От 7 до 20 прогнозов в день</li>
+                          <li class="desc__item">Проходимость от 80% до 90%</li>
+                          <li class="desc__item">Основной спорт: теннис</li>
+                          <li class="desc__item">Скорость роста банка: средняя</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tariffs__btn">
+                          <button class="btn btn--medium btn--gradient" id="popup-toggle" data-tariff="Standart" data-days="30 дней" data-price="1990">Оплатить
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariffs__item">
+                  <div class="tariffs__skin">
+                    <div class="tariffs__icon"><img class="tariffs__img lazy" src="data:image/gif;base64,R0lGODlhyQDJAIAAAP///wAAACH5BAEAAAEALAAAAADJAMkAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8YIjRw7evy4rQAAOw==" data-src="img/tariffs/tariff-express.png" data-srcset="img/tariffs/tariff-express.png 1x" alt="#"></div>
+                    <div class="tariffs__marker">
+                      <div class="marker marker--dark"><span class="marker__time">30 дней</span></div>
+                    </div>
+                  </div>
+                  <div class="tariffs__content">
+                    <div class="tariffs__price"><span class="price">3990</span>
+                    </div>
+                    <div class="tariffs__desc">
+                      <div class="desc desc--small">
+                        <ul class="desc__text">
+                          <li class="desc__item">От 1 до 2 экспрессов в день</li>
+                          <li class="desc__item">Самые высокие коэффициенты: от 3 до 10</li>
+                          <li class="desc__item">Скорость роста банка: выше среднего</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tariffs__btn">
+                          <button class="btn btn--medium btn--gradient" id="popup-toggle" data-tariff="Express" data-days="30 дней" data-price="3990">Оплатить
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariffs__item">
+                  <div class="tariffs__skin">
+                    <div class="tariffs__icon"><img class="tariffs__img lazy" src="data:image/gif;base64,R0lGODlhxQDGAIAAAP///wAAACH5BAEAAAEALAAAAADFAMYAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8YDcgUAADs=" data-src="img/tariffs/tariff-vip.png" data-srcset="img/tariffs/tariff-vip.png 1x" alt="#"></div>
+                    <div class="tariffs__marker">
+                      <div class="marker marker--accent"><span class="marker__time">30 дней</span></div>
+                    </div>
+                  </div>
+                  <div class="tariffs__content">
+                    <div class="tariffs__price"><span class="price">5990</span><span class="discount">12 000</span>
+                    </div>
+                    <div class="tariffs__time">
+                      <div class="time">
+                        До конца скидки:
+                        <span class="time__days">20</span>
+                        д.
+                        
+                        <span class="time__hours">12</span>
+                        ч.
+                      </div>
+                    </div>
+                    <div class="tariffs__desc">
+                      <div class="desc desc--small">
+                        <ul class="desc__text">
+                          <li class="desc__item">От 3 до 5 надежных прогнозов в день</li>
+                          <li class="desc__item">Самая высокая проходимость прогнозов</li>
+                          <li class="desc__item">Скорость роста банка: крайне высокая</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tariffs__btn">
+                          <button class="btn btn--medium btn--gradient" id="popup-toggle" data-tariff="VIP" data-days="30 дней" data-price="5990">Оплатить
+                          </button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section chat">
+      <div class="wrapper">
+        <div class="chat__title" id="contacts">
+          <div class="title">
+            <div class="title__text">
+              <h6>Бесплатный чат</h6>
+            </div>
+          </div>
+        </div>
+        <div class="chat__inner">
+          <div class="chat__heading">
+            <div class="heading">
+              <h2>Бесплатный чат.</h2>
+            </div>
+          </div>
+          <div class="chat__desc">
+            <div class="desc desc--small">
+              <div class="desc__text">Присоедниняйся к нашему бесплатному чату прямо сейчас и удостоверься в качестве нашей работы.</div>
+            </div>
+          </div>
+          <div class="chat__btn">
+                <a class="btn btn--medium btn--gradient" href="vk.com">Присоединиться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section reviews">
+      <div class="wrapper">
+        <div class="reviews__title" id="reviews">
+          <div class="title">
+            <div class="title__text">
+              <h6>Отзывы</h6>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__inner">
+          <div class="reviews__animate">
+            <div class="reviews__laptop"></div>
+          </div>
+          <div class="reviews__content">
+            <div class="reviews__heading">
+              <div class="heading">
+                <div class="heading__text">
+                  <h2>Пиши, как есть. Это важно.</h2>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__desc">
+              <div class="desc desc--small">
+                <div class="desc__text">Оставьте отзыв о нашей работе. Благодаря вашим комментариям мы становимся лучше.</div>
+              </div>
+            </div>
+            <div class="reviews__btn">
+                  <a class="btn btn--medium btn--gradient" href="vk.com">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section footer">
+      <div class="wrapper">
+        <div class="footer__title">
+          <div class="title"></div>
+        </div>
+        <div class="footer__inner">
+          <div class="footer__navigate">
+            <div class="footer__nav">
+                  <nav class="navbar navbar--footer">
+                    <ul class="navbar__wrap">
+                      <li class="navbar__item"><a class="navbar__link" href="#about">О нас</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#method">Порядок работы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#reviews">Отзывы</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#contacts">Контакты</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="#tariffs">Тарифы</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="footer__logo">
+                  <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhXgBuAIAAAP///wAAACH5BAEAAAEALAAAAABeAG4AAAJ2jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOQlTAAA7" data-src="img/logo.png" data-srcset="img/logo.png 1x" alt="logo"></a></div>
+            </div>
+          </div>
+          <div class="footer__contacts"><a class="footer__emal" href="#">info@cashup.bet</a></div>
+          <div class="footer__sub">
+            <div class="footer__rules">Cash Up ® 2020. Все права защищены.</div>
+            <div class="footer__info">E-mail для сязи с намиt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

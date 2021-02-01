@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Logistics</title>
+    <meta name="description" content="Website">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <meta name="theme-color" content="#000">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body class="page">
+    <!-- PUG TO-TOP START (to-top.pug) //-->
+        <div class="modal modal--simple" id="modalSimple">
+          <div class="modal__wrap">
+            <div class="modal__dialog">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <div class="modal__sub">Свяжитесь с нами прямо сейчас – и вас проконсультирует ведущий эксперт Pro.Logistics.</div>
+                  <div class="modal__act">Спешите! В данный момент действует специальное предложение.</div>
+                  <div class="modal__close">
+                        <button class="close" type="button" aria-label="Закрыть" data-dismiss-modal><span></span>
+                        </button>
+                  </div>
+                </div>
+                <div class="modal__body">
+                  <form class="modal__form" action="main.php" method="POST">
+                        <label class="label">
+                          <input class="input" type="text" placeholder="Имя">
+                        </label>
+                        <label class="label">
+                          <input class="input" type="text" placeholder="Телефон">
+                        </label>
+                        <button class="btn" type="button"><span>Оставь заявку</span>
+                        </button>
+                  </form>
+                </div>
+                <div class="modal__footer"><span>Мы находимся здесь!</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="mobile-menu mobile-menu--right-side" id="mobileMenu">
+          <div class="mobile-menu__inner">
+            <div class="mobile-menu__side">
+              <div class="mobile-menu__content">
+                <div class="mobile-menu__header">
+                  <div class="mobile-menu__logo"><a class="logo" href="#"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhcwAmAIAAAP///wAAACH5BAEAAAEALAAAAABzACYAAAJHjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsGFwAAOw==" data-src="img/logoblue.png" data-srcset="img/logoblue.png 1x" alt="Логотип"></a>
+                  </div>
+                  <div class="mobile-menu__close">
+                        <button class="close" type="button" aria-label="Закрыть мобильное меню" data-dismiss-mobile-menu><span></span>
+                        </button>
+                  </div>
+                </div>
+                <div class="mobile-menu__body">
+                  <div class="mobile-menu__nav">
+                        <nav class="navbar navbar--mobile" id="navbar">
+                          <ul class="navbar__list">
+                                <li class="navbar__item"><a class="navbar__link" href="#services" data-anchor>Услуги</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#about" data-anchor>О компании</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#prices" data-anchor>Цены</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#clients" data-anchor>Клиенты</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#contacts" data-anchor>Контакты</a>
+                                </li>
+                          </ul>
+                        </nav>
+                  </div>
+                </div>
+                <div class="mobile-menu__footer">
+                  <div class="mobile-menu__btn">
+                        <button class="btn btn--strong" type="button" data-open-modal="modalSimple"><span>Получить консультацию</span>
+                        </button>
+                  </div>
+                  <div class="mobile-menu__items">
+                    <div class="mobile-menu__item">
+                          <div class="short-info short-info--small">
+                            <div class="short-info__icon">
+                              <svg width="41" height="41">
+                                <use xlink:href="img/sprites/symbol/sprite.svg#global"></use>
+                              </svg>
+                            </div>
+                            <div class="short-info__content">
+                              <div class="short-info__subject">Адрес</div>
+                              <div class="short-info__desc">
+                                <div class="short-info__addres">196158, г. Санкт-Петербург, Московское шоссе 30/2</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="mobile-menu__item">
+                          <div class="short-info short-info--small">
+                            <div class="short-info__icon">
+                              <svg width="41" height="41">
+                                <use xlink:href="img/sprites/symbol/sprite.svg#support"></use>
+                              </svg>
+                            </div>
+                            <div class="short-info__content">
+                              <div class="short-info__subject">Поддержка</div>
+                              <div class="short-info__desc">
+                                <div class="short-info__number"><a class="short-info__link" href="#">+7 911 211 12 25</a></div>
+                                <div class="short-info__mail"><a class="short-info__link" href="#">1st.logistics.agent@gmail.com</a></div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__bg"><img class="mobile-menu__img lazy" src="data:image/gif;base64,R0lGODlhBAH9AIAAAP///wAAACH5BAEAAAEALAAAAAAEAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8ZhjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbuo1SAAA7" data-src="img/contacts/call-planet.png" data-srcset="img/contacts/call-planet.png 1x" alt="#"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <section class="section main-nav">
+      <div class="wrapper-fluid">
+        <div class="main-nav__inner">
+          <div class="main-nav__logo"><a class="logo logo--white" href="#"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhcwAmAIAAAP///wAAACH5BAEAAAEALAAAAABzACYAAAJHjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsGFwAAOw==" data-src="img/logo.png" data-srcset="img/logo.png 1x" alt="Логотип"></a><a class="logo logo--blue logo--disabled" href="#"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhcwAmAIAAAP///wAAACH5BAEAAAEALAAAAABzACYAAAJHjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsGFwAAOw==" data-src="img/logoblue.png" data-srcset="img/logoblue.png 1x" alt="Логотип"></a>
+          </div>
+          <div class="main-nav__navbar">
+                <nav class="navbar navbar--general" id="navbar">
+                  <ul class="navbar__list">
+                        <li class="navbar__item"><a class="navbar__link" href="#services" data-anchor>Услуги</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#about" data-anchor>О компании</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#prices" data-anchor>Цены</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#clients" data-anchor>Клиенты</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#contacts" data-anchor>Контакты</a>
+                        </li>
+                  </ul>
+                </nav>
+          </div>
+          <div class="main-nav__btn">
+                <button class="btn" type="button" data-open-modal="modalSimple"><span>Получить консультацию</span>
+                </button>
+          </div>
+          <div class="main-nav__burger">
+                <button class="burger" type="button" aria-label="Показать мобильное меню" data-open-mobile-menu="mobileMenu">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprites/symbol/sprite.svg#burger"></use>
+                  </svg>
+                </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__content">
+            <div class="header__title wow bounceInLeft" data-wow-delay="0s">
+                  <div class="title">
+                    <h1>Логистика и таможенное оформление</h1>
+                  </div>
+            </div>
+            <div class="header__desc wow bounceInLeft" data-wow-delay="0.5s">Нужен надёжный партнёр в сфере международных перевозок и таможенного оформления?<br><span>Pro.Logistics уже здесь!</span></div>
+            <div class="header__more"><a class="header__anchor" href="#services" data-anchor>
+                <div class="header__arrow-down">
+                  <svg width="102" height="55">
+                    <use xlink:href="img/sprites/symbol/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div><span>Узнать больше</span></a></div>
+            <div class="header__btn">
+                  <button class="btn" type="button" data-open-modal="modalSimple"><span>Получить консультацию</span>
+                  </button>
+            </div>
+          </div>
+          <div class="header__car wow bounceInRight" data-wow-delay="0s" data-wow-duration="1.3s"><img class="header__img lazy" src="data:image/gif;base64,R0lGODlhKwHzAIAAAP///wAAACH5BAEAAAEALAAAAAArAfMAAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8Z1jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0L+GEBADs=" data-src="img/header/car.png" data-srcset="img/header/car.png 1x" alt="car"></div>
+        </div>
+      </div>
+      <div class="extra-bar">
+        <div class="wrapper">
+          <div class="extra-bar__inner">
+            <div class="extra-bar__items wow bounceIn" data-wow-delay="0.8s">
+                  <div class="extra-bar__item">
+                    <div class="extra-bar__icon">
+                      <svg width="50" height="50">
+                        <use xlink:href="img/sprites/symbol/sprite.svg#mountain-range"></use>
+                      </svg>
+                    </div>
+                    <div class="extra-bar__desc"><span>12 лет успешной работы</span>
+с десятками клиентов
+                    </div>
+                  </div>
+                  <div class="extra-bar__item">
+                    <div class="extra-bar__icon">
+                      <svg width="50" height="50">
+                        <use xlink:href="img/sprites/symbol/sprite.svg#hand-shake"></use>
+                      </svg>
+                    </div>
+                    <div class="extra-bar__desc"><span>Ценим долгосрочные отношения</span>
+и будем рады новым заказчикам
+                    </div>
+                  </div>
+                  <div class="extra-bar__item">
+                    <div class="extra-bar__icon">
+                      <svg width="50" height="50">
+                        <use xlink:href="img/sprites/symbol/sprite.svg#delivery-package"></use>
+                      </svg>
+                    </div>
+                    <div class="extra-bar__desc"><span>Решаем задачи любой сложности</span>
+от поставок «под ключ» и нестандартных таможенных режимов и процедур – до отдельных услуг в сфере логистики
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section services" id="services">
+      <div class="services__side wow bounceInLeft" data-wow-delay="0s"><img class="services__img lazy" src="data:image/gif;base64,R0lGODlh5gLBBIAAAP///wAAACH5BAEAAAEALAAAAADmAsEEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENMHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qAoqAAA7" data-src="img/services/serviceselem.png" data-srcset="img/services/serviceselem.png 1x" alt="#"></div>
+      <div class="wrapper">
+        <div class="services__inner">
+          <div class="services__content">
+            <div class="services__caption">
+              <div class="services__title wow bounceInLeft" data-wow-delay="0.3s">
+                    <div class="title title--dark wow bounceInLeft" data-wow-delay="0.3s">
+                      <h2>
+                        Наши
+                        <span>услуги</span>
+                      </h2>
+                      <div class="subtitle wow bounceInLeft" data-wow-delay="0.5s">
+                        <p>
+                          У вас есть потребность,
+                          <span>у нас есть решение</span>
+                        </p>
+                      </div>
+                    </div>
+              </div>
+              <div class="services__btn">
+                    <button class="btn" type="button" data-open-modal="modalSimple"><span>Получить консультацию</span>
+                    </button>
+              </div>
+            </div>
+            <div class="services__items">
+              <div class="services__item">
+                    <div class="service">
+                      <div class="service__number">01</div>
+                      <div class="service__content">
+                        <div class="service__subject">Перевозка грузов: быстро и без лишних затрат</div>
+                        <div class="service__desc">Подбор оптимальных вариантов доставки</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="services__item">
+                    <div class="service">
+                      <div class="service__number">02</div>
+                      <div class="service__content">
+                        <div class="service__subject">Таможенное оформление</div>
+                        <div class="service__desc">Оформление в любых таможенных режимах по всей территории РФ в полном соответствии с таможенным законодательством.</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="services__item">
+                    <div class="service">
+                      <div class="service__number">03</div>
+                      <div class="service__content">
+                        <div class="service__subject">Расчёт стоимости внешнеэкономических сделок</div>
+                        <div class="service__desc">Классификация груза в соответствии с ТН ВЭД и точный расчёт таможенных платежей помогут оптимизировать ваши расходы на внешнеэкономическую деятельность.</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="services__item">
+                    <div class="service">
+                      <div class="service__number">04</div>
+                      <div class="service__content">
+                        <div class="service__subject">Консалтинг</div>
+                        <div class="service__desc">Пока нет точных планов, но хотели бы уточнить детали, связанные с организацией международной поставки? Нужна помощь с внутрироссийскими перевозками? Обратитесь к нам, чтобы получить профессиональную консультацию.</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="services__btn-two">
+                  <button class="btn" type="button" data-open-modal="modalSimple"><span>Получить консультацию</span>
+                  </button>
+            </div>
+          </div>
+          <div class="services__road1 wow bounceInDown" data-wow-delay="0.7s"><img class="services__img lazy" src="data:image/gif;base64,R0lGODlhKgIqAoAAAP///wAAACH5BAEAAAEALAAAAAAqAioCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHotgbLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQS/1sAADs=" data-src="img/services/services1.png" data-srcset="img/services/services1.png 1x" alt=""></div>
+          <div class="services__road2 wow bounceInUp" data-wow-delay="0.3s"><img class="services__img lazy" src="data:image/gif;base64,R0lGODlhZwFhAYAAAP///wAAACH5BAEAAAEALAAAAABnAWEBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP79+7wUBAAA7" data-src="img/services/services2.png" data-srcset="img/services/services2.png 1x" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div class="wrapper">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="about__title">
+                  <div class="title title--light wow bounceInLeft" data-wow-delay="0s">
+                    <h2><span>Кто мы</span>
+                      такие
+                    </h2>
+                    <div class="subtitle wow bounceInLeft" data-wow-delay="0.3s">
+                      <p><span>Pro.Logistics является одной из ведущих компаний</span>
+                        в сфере международных перевозок
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="about__desc wow bounceInLeft" data-wow-delay="0.7s">
+              <p>Наша компания – серьёзный игрок на рынке логистики. За 12 лет безукоризненной работы мы накопили уникальный опыт и собрали вокруг себя команду ведущих специалистов в отрасли.</p>
+              <p><span>Мы предлагаем своим клиентам качество и пунктуальность,</span>
+                умеем работать с любыми видами грузов, а наши расчёты внешнеэкономических сделок приносят пользу сотням предприятий по всей России.
+              </p>
+            </div>
+          </div>
+          <div class="about__crane"></div>
+        </div>
+      </div>
+      <div class="about__picmob"><img class="about__img lazy" src="data:image/gif;base64,R0lGODlhQwMwAoAAAP///wAAACH5BAEAAAEALAAAAABDAzACAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk9ITnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKf1gAADs=" data-src="img/price/picmob.png" data-srcset="img/price/picmob.png" alt="#"></div>
+    </section>
+    <section class="section num">
+      <div class="wrapper">
+        <div class="num__inner">
+          <div class="num__content">
+            <div class="num__title">
+                  <div class="title title--light wow bounceInLeft" data-wow-delay="0s">
+                    <h2>Pro.Logistics в цифрах</h2>
+                    <div class="subtitle wow bounceInLeft" data-wow-delay="0.3s">
+                      <p>
+                        Мы прилагаем все усилия, чтобы
+                        <span>удовлетворить наших клиентов во всем мире</span>
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="num__map-m"><img class="num__img lazy" src="data:image/gif;base64,R0lGODlh9AJ0AYAAAP///wAAACH5BAEAAAEALAAAAAD0AnQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHos3bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvGkVAAA7" data-src="img/num/map.png" data-srcset="img/num/map.png 1x" alt="#"></div>
+            <div class="num__items">
+                  <div class="num__item">
+                    <div class="num__subject">100<span>%</span></div>
+                    <div class="num__desc">гарантия результата</div>
+                  </div>
+                  <div class="num__item">
+                    <div class="num__subject">98,73<span>%</span></div>
+                    <div class="num__desc">положительных отзывов по итогам работы</div>
+                  </div>
+                  <div class="num__item">
+                    <div class="num__subject">30<span>минут</span></div>
+                    <div class="num__desc">максимальное время ожидания ответа на запрос</div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="num__map"><img class="num__img lazy" src="data:image/gif;base64,R0lGODlh9AJ0AYAAAP///wAAACH5BAEAAAEALAAAAAD0AnQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHos3bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvGkVAAA7" data-src="img/num/map.png" data-srcset="img/num/map.png 1x" alt="#"></div>
+    </section>
+    <section class="section price" id="prices">
+      <div class="price__elem"><img class="price__img lazy" src="data:image/gif;base64,R0lGODlhvwLBBIAAAP///wAAACH5BAEAAAEALAAAAAC/AsEEAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEMbHwrRiEp0ohStqEUvitGManSjHO2oRz+asAIAADs=" data-src="img/price/priceelem.png" data-srcset="img/price/priceelem.png 1x" alt="#"></div>
+      <div class="wrapper">
+        <div class="price__inner">
+          <div class="price__pic wow bounceInLeft" data-wow-delay="0.7s"><img class="price__img lazy" src="data:image/gif;base64,R0lGODlh7gHAAYAAAP///wAAACH5BAEAAAEALAAAAADuAcABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fzL+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuyimGBQAAOw==" data-src="img/price/pricepic.png" data-srcset="img/price/pricepic.png 1x" alt="#"></div>
+          <div class="price__caption">
+            <div class="price__title">
+                  <div class="title title--dark wow bounceInLeft" data-wow-delay="0s">
+                    <h2>
+                      Доступная
+                      <span>цена</span>
+                    </h2>
+                    <div class="subtitle wow bounceInLeft" data-wow-delay="0.3s">
+                      <p><span>Отлаженные процессы -</span>
+                        залог качества и доступных цен
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="price__btn">
+                  <button class="btn btn--strong" type="button" data-open-modal="modalSimple"><span>Получить расчет</span>
+                  </button>
+            </div>
+          </div>
+          <div class="price__content">
+            <div class="price__items">
+                  <div class="price__item">
+                    <div class="price__icon">
+                      <svg width="50" height="50">
+                        <use xlink:href="img/sprites/symbol/sprite.svg#truck"></use>
+                      </svg>
+                    </div>
+                    <div class="price__desc"><span>Мы полностью отладили транспортировку,</span>
+                      поэтому каждый этап перевозки проходит без простоев. Это позволяет нам не только соблюдать оговорённые сроки, но и снижать до минимума затраты на доставку.
+                    </div>
+                  </div>
+                  <div class="price__item">
+                    <div class="price__icon">
+                      <svg width="50" height="50">
+                        <use xlink:href="img/sprites/symbol/sprite.svg#truckworld"></use>
+                      </svg>
+                    </div>
+                    <div class="price__desc"><span>Готовы освободить вас от логистических забот:</span>
+                      благодаря опыту и развитой сети партнёров наша компания оказывает услуги таможенного оформления при минимальном участии заказчика.
+                      
+                      <span>Работаем быстро, но сохраняем при этом эталонное качество сервиса.</span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section clients" id="clients">
+      <div class="wrapper">
+        <div class="clients__inner">
+          <div class="clients__title">
+                <div class="title title--light wow bounceInLeft" data-wow-delay="0s">
+                  <h2>
+                    Нам
+                    <span>доверяют</span>
+                  </h2>
+                  <div class="subtitle wow bounceInLeft" data-wow-delay="0.3s"><span>Наши клиенты доверяют нам, и делают нас особенными</span></div>
+                </div>
+          </div>
+          <div class="clients__content">
+            <div class="clients__items">
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhvwAxAIAAAP///wAAACH5BAEAAAEALAAAAAC/ADEAAAJvjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI+FIAADs=" data-src="img/clients/client1.png" data-srcset="img/clients/client1.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhuQAxAIAAAP///wAAACH5BAEAAAEALAAAAAC5ADEAAAJtjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqIhRAAA7" data-src="img/clients/client2.png" data-srcset="img/clients/client2.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlh2QAxAIAAAP///wAAACH5BAEAAAEALAAAAADZADEAAAJ4jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZSVMAADs=" data-src="img/clients/client3.png" data-srcset="img/clients/client3.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhlgAxAIAAAP///wAAACH5BAEAAAEALAAAAACWADEAAAJfjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/d8bwEAOw==" data-src="img/clients/client4.png" data-srcset="img/clients/client4.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlh/AAxAIAAAP///wAAACH5BAEAAAEALAAAAAD8ADEAAAKDjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QmqVgAAOw==" data-src="img/clients/client5.png" data-srcset="img/clients/client5.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhTAExAIAAAP///wAAACH5BAEAAAEALAAAAABMATEAAAKajI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1treytaAAA7" data-src="img/clients/client6.png" data-srcset="img/clients/client6.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhBAExAIAAAP///wAAACH5BAEAAAEALAAAAAAEATEAAAKGjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjqKUQAAOw==" data-src="img/clients/client7.png" data-srcset="img/clients/client7.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhsAAxAIAAAP///wAAACH5BAEAAAEALAAAAACwADEAAAJpjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoGFcAADs=" data-src="img/clients/client8.png" data-srcset="img/clients/client8.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlh6QAxAIAAAP///wAAACH5BAEAAAEALAAAAADpADEAAAJ9jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmakJVgAAOw==" data-src="img/clients/client9.png" data-srcset="img/clients/client9.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhAAExAIAAAP///wAAACH5BAEAAAEALAAAAAAAATEAAAKEjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaGlkAADs=" data-src="img/clients/client10.png" data-srcset="img/clients/client10.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhZAEyAIAAAP///wAAACH5BAEAAAEALAAAAABkATIAAAKjjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7C2xSAAA7" data-src="img/clients/client11.png" data-srcset="img/clients/client11.png 1x" alt="alt"></a></div>
+                  <div class="clients__item"><a class="clients__link" href="#"><img class="clients__img lazy" src="data:image/gif;base64,R0lGODlhTAEyAIAAAP///wAAACH5BAEAAAEALAAAAABMATIAAAKcjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubW1gAADs=" data-src="img/clients/client12.png" data-srcset="img/clients/client12.png 1x" alt="alt"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts" id="contacts">
+      <div class="wrapper">
+        <div class="contacts__inner">
+          <div class="contacts__planet"><img class="contacts__img lazy" src="data:image/gif;base64,R0lGODlhCAL6AYAAAP///wAAACH5BAEAAAEALAAAAAAIAvoBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHosYbLLKLstss84+C2200k5LbbXWXoutqAUAADs=" data-src="img/contacts/call-planet.png" data-srcset="img/contacts/call-planet.png 1x" alt="#"></div>
+          <div class="contacts__caption">
+            <div class="contacts__title">
+                  <div class="title title--dark wow bounceInLeft" data-wow-delay="0s">
+                    <h2>
+                      
+                      <span>Свяжитесь</span>
+                      с нами
+                    </h2>
+                    <div class="subtitle wow bounceInLeft" data-wow-delay="0.3s">
+                      <p>Остались вопросы? Свяжитесь с нами прямо сейчас - и вас проконсультирует ведущий эксперт Pro.Logistics</p>
+                    </div>
+                  </div>
+              <div class="subdesc">Спешите! В данный момент дествует специальное предлжение.</div>
+            </div>
+          </div>
+          <div class="contacts__content">
+            <form class="contacts__form" action="mail.php" method="POST">
+                  <label class="label">
+                    <input class="input" type="text" placeholder="Имя">
+                  </label>
+                  <label class="label">
+                    <input class="input" type="text" placeholder="Телефон">
+                  </label>
+                  <button class="btn" type="button"><span>Оставить заявку</span>
+                  </button>
+            </form>
+            <div class="contacts__items">
+              <div class="contacts__item">
+                    <div class="short-info short-info--strong">
+                      <div class="short-info__icon">
+                        <svg width="41" height="41">
+                          <use xlink:href="img/sprites/symbol/sprite.svg#support"></use>
+                        </svg>
+                      </div>
+                      <div class="short-info__content">
+                        <div class="short-info__subject">Поддержка</div>
+                        <div class="short-info__desc">
+                          <div class="short-info__number"><a class="short-info__link" href="#">+7 911 211 12 25</a></div>
+                          <div class="short-info__mail"><a class="short-info__link" href="#">1st.logistics.agent@gmail.com</a></div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="contacts__item">
+                    <div class="short-info short-info--strong">
+                      <div class="short-info__icon">
+                        <svg width="41" height="41">
+                          <use xlink:href="img/sprites/symbol/sprite.svg#global"></use>
+                        </svg>
+                      </div>
+                      <div class="short-info__content">
+                        <div class="short-info__subject">Адрес</div>
+                        <div class="short-info__desc">
+                          <div class="short-info__addres">196158, г. Санкт-Петербург, Московское шоссе 30/2</div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__logotip">
+            <div class="footer__logo"><a class="logo logo--white" href="#"><img class="logo__img lazy" src="data:image/gif;base64,R0lGODlhoAA0AIAAAP///wAAACH5BAEAAAEALAAAAACgADQAAAJnjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SEhUAAA7" data-src="img/logofooter.png" data-srcset="img/logofooter.png 1x" alt="Логотип"></a>
+            </div>
+            <div class="footer__rules">Pro.Logistics, 2019 © Все права защищены</div>
+          </div>
+          <div class="footer__nav">
+                <nav class="navbar navbar--secondary" id="navbar">
+                  <ul class="navbar__list">
+                        <li class="navbar__item"><a class="navbar__link" href="#services" data-anchor>Услуги</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#about" data-anchor>О компании</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#prices" data-anchor>Цены</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#clients" data-anchor>Клиенты</a>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#contacts" data-anchor>Контакты</a>
+                        </li>
+                  </ul>
+                </nav>
+          </div>
+          <div class="footer__btn">
+                <button class="btn" type="button" id="to-top">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprites/symbol/sprite.svg#uparrow"></use>
+                  </svg>
+                </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
